@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Data Visualization Dashboard - BD-PE A&O</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="navbar"><a class="brand" href="index.html">BD-PE A&O</a></header>
+    <main style="padding:24px">
+      <h1>Data Visualization Dashboard</h1>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
+        <div class="glass" style="padding:14px"><canvas id="lineViz" width="400" height="220"></canvas></div>
+        <div class="glass" style="padding:14px"><canvas id="pieViz" width="400" height="220"></canvas></div>
+      </div>
+    </main>
+    <script>
+      const l=document.getElementById('lineViz'); if(l){new Chart(l.getContext('2d'),{type:'line',data:{labels:['Wk1','Wk2','Wk3','Wk4'],datasets:[{label:'Avg Score',data:[72,75,78,81],borderColor:'#00ff88',fill:true,backgroundColor:'rgba(0,255,136,0.06)'}]}})}
+      const p=document.getElementById('pieViz'); if(p){new Chart(p.getContext('2d'),{type:'pie',data:{labels:['Running','Jump','Throw'],datasets:[{data:[45,30,25],backgroundColor:['#00ff88','#ff3cac','#3ac2ff']}]}})}
+    </script>
+  </body>
+</html>

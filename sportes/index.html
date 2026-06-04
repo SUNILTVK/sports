@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Big Data-Based Physical Education Assessment and Optimization System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <div class="clip"></div>
+      <h3 class="loader-title">Initializing System...</h3>
+    </div>
+
+    <div class="app-shell">
+      <canvas id="bgCanvas" class="bg-canvas"></canvas>
+      <div class="stars"></div>
+
+      <header class="navbar" id="navbar">
+        <div class="nav-left">
+          <a class="brand" href="index.html">BD-PE A&O</a>
+          <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
+        </div>
+        <nav class="nav" id="nav">
+          <a href="index.html">Home</a>
+          <a href="student-tracking.html">Student Tracking</a>
+          <a href="big-data.html">Big Data</a>
+          <a href="fitness-monitoring.html">Fitness</a>
+          <a href="automated-assessment.html">Automated</a>
+          <a href="personalized-training.html">Persona
+          <a href="performance-comparison.html">Comparison</a>
+          <a href="report-generation.html">Reports</a>
+          <a href="data-visualization.html">Dashboard</a>
+          <a href="attendance-management.html">Attendance</a>
+          <a href="sports-activity.html">Activities</a>
+          <a href="ai-recommendations.html">AI</a>
+          <a href="login.html">Login</a>
+          <a href="health-improvement.html">Health</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-right">
+          <button id="musicToggle" class="icon-btn" title="Toggle music">♪</button>
+          <div id="clock" class="clock"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero full-hero">
+          <div class="hero-left">
+            <div class="title-wrap">
+              <h1 class="cinematic-title">Big Data-Based<br>Physical Education</h1>
+              <h2 class="cinematic-sub">Assessment and Optimization System</h2>
+              <div class="title-flare"></div>
+            </div>
+
+            <p class="typewriter" id="typewriter"></p>
+
+            <div class="hero-ctas">
+              <a class="btn neon" href="data-visualization.html">Open Dashboard</a>
+              <a class="btn glass" href="student-tracking.html">Track Students</a>
+            </div>
+
+            <div class="stats-row">
+              <div class="card glass mini">
+                <div class="num" data-target="12450">0</div>
+                <div class="label">Measurements</div>
+              </div>
+              <div class="card glass mini">
+                <div class="num" data-target="98">0</div>
+                <div class="label">AI Models</div>
+              </div>
+              <div class="card glass mini">
+                <div class="num" data-target="452">0</div>
+                <div class="label">Active Students</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hologram">
+              <div class="ball-3d" id="ball3d"></div>
+              <div class="floating-cards">
+                <div class="glass card-large pulse">
+                  <h3>Performance Index</h3>
+                  <canvas id="miniChart" width="300" height="160"></canvas>
+                </div>
+                <div class="glass card-small slide-in">
+                  <h4>Leaderboard</h4>
+                  <ol class="leaderboard">
+                    <li>Team A<span>98%</span></li>
+                    <li>Team C<span>95%</span></li>
+                    <li>Team B<span>92%</span></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features-grid">
+          <article class="glass feature">
+            <h3>Student Performance Tracking</h3>
+            <p>Records activities, scores, attendance and fitness performance with animated cards and charts.</p>
+            <a href="student-tracking.html" class="link-arrow">Open</a>
+          </article>
+          <article class="glass feature">
+            <h3>Big Data Analysis</h3>
+            <p>Analyze large datasets to detect patterns and performance levels.</p>
+            <a href="big-data.html" class="link-arrow">Open</a>
+          </article>
+          <article class="glass feature">
+            <h3>Fitness Monitoring</h3>
+            <p>BMI, heart rate, calories and stamina tracking with progress animations.</p>
+            <a href="fitness-monitoring.html" class="link-arrow">Open</a>
+          </article>
+          <article class="glass feature">
+            <h3>Automated Assessment</h3>
+            <p>Auto grading, AI evaluations and animated report cards.</p>
+            <a href="automated-assessment.html" class="link-arrow">Open</a>
+          </article>
+        </section>
+
+        <section class="quote-slider glass">
+          <div class="quote">“Train hard. Measure harder. Improve faster.” — System Motto</div>
+          <div class="quote">“Data transforms coaching — precision over intuition.” — Coach AI</div>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <strong>BD-PE A&O</strong>
+          <p>Futuristic PE analytics, assessment automation and personalized training.</p>
+        </div>
+        <div class="footer-right">
+          <a href="contact.html">Contact</a>
+          <a href="login.html">Teacher / Student Login</a>
+        </div>
+      </footer>
+
+      <audio id="bgMusic" loop src="https://cdn.pixabay.com/download/audio/2021/09/21/audio_2f05a6b1b8.mp3?filename=futuristic-ambience-110316.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
